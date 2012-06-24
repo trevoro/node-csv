@@ -9,3 +9,7 @@ setup: $(NPM)
 .PHONY: test
 test: $(NODEUNIT)
 	$(NODEUNIT) test/*.test.js $(BUNYAN)
+
+.PHONY: clean
+clean:
+	@rm -rf node_modules
